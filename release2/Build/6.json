@@ -1,0 +1,16 @@
+{
+"companyName": "Alberto Nadin",
+"productName": "Myself",
+"productVersion": "1.4",
+"dataUrl": "6.data.unityweb",
+"wasmCodeUrl": "6.wasm.code.unityweb",
+"wasmFrameworkUrl": "6.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#2B2D42",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.19f1"
+}
