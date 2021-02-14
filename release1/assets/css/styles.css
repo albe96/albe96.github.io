@@ -1,0 +1,9 @@
+.btn:hover {
+  box-shadow: none;
+  background-color: #b32536;
+}
+
+#full:hover {
+  background-color: #e11f36 !important;
+}
+
