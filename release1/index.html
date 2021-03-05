@@ -12,7 +12,12 @@
         <link rel="stylesheet" href="TemplateData/style.css">
         <script src="TemplateData/UnityProgress.js"></script>
 
-        <script src="Build/DataGetter.js"></script>
+        <script>
+            function getDataFromUnity(json) {
+                console.table(JSON.parse(json));
+            }
+        </script>
+
         <script src="Build/UnityLoader.js"></script>
         
         <script>
@@ -20,11 +25,17 @@
         </script>
     </head>
 
-    <body class="d-flex d-lg-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-md-start justify-content-lg-center align-items-lg-center justify-content-xl-start align-items-xl-center" style="background: #3b3d52;width: 100vw;height: 100vh;padding-top: 40px;"><button class="btn btn-primary" id="full" type="button" style="width: 306px;height: 67px;background: #ef233c;box-shadow: 0px 0px rgba(255,255,255,0);outline: none;box-shadow: none;border: none;font-size: 25px;font-family: Roboto, sans-serif;border-top-right-radius: 10px;border-top-left-radius: 10px;" onclick="unityInstance.SetFullscreen(1);"><i class="fas fa-expand-alt" style="margin-right: 20px;"></i>Schermo intero</button>
-        <div id="app" class="webgl-content" style="width: 90%;height: 80%;background: #37384a;">
-            <div id="unityContainer" style="width: 100%; height: 100%"></div>
+    <body class="d-lg-flex flex-column justify-content-lg-start align-items-lg-center" style="background: #3b3d52;">
+        <div class="d-flex d-lg-flex justify-content-between align-items-center align-items-lg-center" style="position: fixed;width: 100%;height: 60px;background: #ef233c;box-shadow: 0px 10px rgb(194,28,48);border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;padding-right: 10px;padding-left: 10px;"><img style="height: 40px;margin: 5px;margin-top: 10px;" src="assets/img/Cattura.png"><button class="btn btn-primary" id="fullscreen" type="button" style="background: rgb(255,255,255);color: rgb(28,28,28);font-size: 14px;font-weight: bold;box-shadow: 0px 5px rgb(28,28,28);border: 2px solid rgb(28,28,28);margin-top: -5px;transition: .2s ease-in-out;" onclick="unityInstance.SetFullscreen(1);">Schermo intero</button></div>
+        <div class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: 100vw;height: calc(100vh - 40px);">
+            <div id="app" class="webgl-content" style="width: 75%;height: 65vh;background: #353648;">
+                <div id="unityContainer" style="width: 100%; height: 100%"></div>
+            </div>
+        </div>
+        <div class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: 100%;height: 40px;background: rgba(255,255,255,0);color: rgb(33, 37, 41);padding-bottom: 20px;">
+            <p style="margin-bottom: 0;color: rgba(255,255,255,0.5);">Coded with&nbsp;<i class="fas fa-heart" style="font-size: 13px;"></i> by Alberto Nadin</p>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
